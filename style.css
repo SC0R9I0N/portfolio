@@ -1,81 +1,100 @@
-/* Reset */
-*,
-*::before,
-*::after {
+/* I actually had to do a portfolio website previously, so I just adjusted the style.css to be similar */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* Global resets */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
   box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
-/* Base */
-body {
-  font-family: system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #222;
-  background: #fff;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+header {
+  background: linear-gradient(to left, #7209b7, #480ca8);
+  padding: 1em 0;
 }
 
-/* Navigation */
-nav {
-  margin-bottom: 2rem;
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 
-nav a {
-  margin-right: 1.25rem;
+header nav a {
+  color: #fff;
   text-decoration: none;
-  color: #0066cc;
+  font-weight: 600;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
-/* Sections */
+main {
+  margin: 0 auto;
+  padding: 2%;
+  width: 75%;
+}
+
+/* Section styling */
 section {
-  margin-bottom: 2.5rem;
+  background: #fff;
+  margin-bottom: 2%;
+  overflow: auto;
+  border-radius: 4px;
 }
 
-/* Headings */
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.25rem;
+section h2 {
+  margin-top: 0;
+  margin-bottom: 1%;
+  padding: 1em;
+  color: #fff;
+  background: linear-gradient(to left, #7209b7, #480ca8);
+  width: 100%;
 }
 
-h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+section p,
+section ul li {
+  padding: 0.4em 2%;
 }
 
-/* Projects */
+section a {
+  color: #222;
+}
+
 .project {
-  margin-bottom: 1.25rem;
+  padding: 1em 2%;
+  border-left: 4px solid #7209b7;
+  margin-bottom: 1.5em;
+  background: #fafafa;
 }
 
-.project p {
-  color: #444;
+.project h3 {
+  margin-top: 0;
+  color: #480ca8;
 }
 
-/* Skills */
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.25rem;
-}
-
-/* Footer */
 footer {
-  margin-top: 3rem;
-  font-size: 0.875rem;
-  color: #888;
-  border-top: 1px solid #eee;
-  padding-top: 1rem;
+  background: linear-gradient(to left, #7209b7, #480ca8);
+  color: #fff;
+  text-align: center;
+  padding: 1% 0;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
 }
